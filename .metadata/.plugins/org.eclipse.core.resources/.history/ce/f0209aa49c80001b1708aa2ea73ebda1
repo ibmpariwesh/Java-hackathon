@@ -1,0 +1,32 @@
+
+public class Student {
+	private String name; //Data encapsulation
+	private byte age;   //in years
+	
+	void study() {
+		System.out.println("Ram is studying");
+	}
+	
+	public byte getAge() {
+		return age;
+	}
+	public void setAge(byte age) {
+		this.age = age;
+	}
+	Student(){//default constructor
+		
+	}
+	Student(String name){ //custom constructor
+		setName(name);
+	}
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		if(name == null | name.trim().equals("")) {
+			throw new IllegalArgumentException("name is mandatory");
+		}
+		this.name = name;
+	} 
+}

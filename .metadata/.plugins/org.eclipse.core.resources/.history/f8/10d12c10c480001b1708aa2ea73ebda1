@@ -1,0 +1,13 @@
+
+public class AccessModifiers {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class A{
+	
+}
+class B{
+	int a=0;
+}

@@ -1,0 +1,22 @@
+
+public class Student extends Human{
+	
+	private byte age;   //in years
+	
+	void study() {
+		System.out.println(getName()+" is studying");
+	}
+	
+	public byte getAge() {
+		return age;
+	}
+	public void setAge(byte age) {
+		this.age = age;
+	}
+	Student(){//default constructor
+		
+	}
+	Student(String name){ //custom constructor
+		setName(name);
+	}
+}
