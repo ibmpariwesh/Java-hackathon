@@ -1,0 +1,12 @@
+package com;
+
+import com.ibm.B;
+
+public class A extends B {
+	public int age=20;
+	public void m1() {
+		System.out.println("super class");
+	}
+}
+
+//public-> protected-> default-> private

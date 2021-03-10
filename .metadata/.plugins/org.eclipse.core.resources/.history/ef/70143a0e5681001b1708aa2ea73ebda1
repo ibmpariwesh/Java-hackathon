@@ -1,5 +1,6 @@
 
 public class Teacher extends Human{
+	private String name; // immutable
 	//
 	private String subject; // mutable
 	private float salary; // mutable
