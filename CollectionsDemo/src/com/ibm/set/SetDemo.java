@@ -13,13 +13,16 @@ public class SetDemo {
 	private static void createBookSet() {
 		Set<Book> books = new HashSet<Book>();
 		// CTRL+SHIFT+O
-		for (int i = 1; i < 100; i++) {
+		for (int i = 1; i < 5; i++) {
 			Book book = new Book("Title " + i);
 			book.setPrice(100 * i);
 			book.setPublishYear(i + 2000);
 			books.add(book);
+			books.add(book);
 		}
-		System.out.println(books);
+		
+		System.out.println(books.size());
+//		System.out.println(books);
 	}
 
 }
