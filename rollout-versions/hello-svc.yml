@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-rollout-svc
+  namespace: helloworld
+  labels:
+     desire3d.io/name: hello-svc
+spec:
+  selector:
+     desire3d.io/name: hello
+  type: LoadBalancer
+  ports:
+   - port: 80
+     targetPort: 80
